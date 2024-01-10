@@ -7,12 +7,15 @@ def createzhangSan():
     }
     while True:
         x = yield 22
-        print('\n ***  2执行清除张三账号的代码 ***')
+        print(f'{x} ***  2执行清除张三账号的代码 ***')
 # from collections.abc import Iterable
 
 a =createzhangSan()
 res_a = next(a)
-print('res: %s' %res_a)
+print('res: %s' %res_a) #22
 # next(a)
 res_b = a.send('kk')
-print(res_b)
+print('res: %s' %res_b)
+res_c = a.send('xx')
+print('res: %s' %res_c)
+# print(res_b)

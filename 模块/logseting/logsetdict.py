@@ -38,7 +38,7 @@ LOGGING_DIC = {
         'simple': {
             'format': simple_format
         },
-        'test': {
+        'practise': {
             'format': test_format
         },
     },
@@ -66,7 +66,7 @@ LOGGING_DIC = {
         'other': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',  # 保存到文件
-            'formatter': 'test',
+            'formatter': 'practise',
             'filename': 'a2.log',
             'encoding': 'utf-8',
         },
